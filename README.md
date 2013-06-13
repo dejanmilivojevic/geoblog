@@ -7,7 +7,6 @@ First install node, couchdb and kanso. Use instrictions from [http://kan.so/inst
 
 
 ```shell
-kanso install
 kanso push http://localhost5984/location
 ```
 
