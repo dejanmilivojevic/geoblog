@@ -1,0 +1,24 @@
+{
+    "name": "location-app",
+    "version": "0.0.1",
+    "description": "Track my location via web",
+    "long_description": "Geo blog.",
+    "attachments": ["index.html", "post.html", "static/img", "promo"],
+    "modules": ["lib", "packages/bootstrap/bootstrap/js"],
+    "load": "lib/app",
+    "less": {
+        "compress": false,
+        "compile": ["static/css/main.less"],
+        "remove_from_attachments": true
+    },
+    
+    "dependencies": {
+        "attachments": null,
+        "modules": null,
+        "properties": null,
+        "less-precompiler": null,
+        "jquery": null,
+        "bootstrap": null,
+        "backbone": null
+    }
+}

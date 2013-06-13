@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <title>Geo blog</title>
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="postForm">
+        <form class="form-horizontal" method="post">
+            <fieldset>
+                <input type="hidden" name="dateTime"/>
+                <label>Lat: <input type="text" name="lat" id="lat"/></label>
+                <label>Lon: <input type="text" name="lon" id="lon"/></label>
+                <div class="control-group">
+                    <textarea name="description" rows="10"></textarea>
+                </div>
+                <div class="control-group">
+                    <input type="file" id="take-picture" accept="audio/*,video/*,image/*">
+                </div>
+                <div class="control-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div id="confirmModal" class="modal">
+        <div class="modal-header">
+            Confirm?
+        </div>
+        <div class="modal-body">
+            Use image location/date?
+        </div>
+        <div class="modal-footer">
+            <a id="modal-form-submit" class='btn' href="#" data-value="no">No</a>
+            <a id="modal-form-submit" class='btn btn-primary' href="#" data-value="yes">Yes</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="modules.js"></script>
+    <script type="text/javascript">
+        var $ = require('jquery');
+        $(document).ready(function() {
+            var PostApp = require('lib/post');
+        });
+    </script>
+</body>
+</html>
