@@ -2,23 +2,38 @@
 
 <html>
 <head>
-    <title>Geo blog</title>
+    <title>Travel blog</title>
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container-fluid">
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="#">Travel blog</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid main-container">
         <div class="row-fluid">
-            <div class="span4 itemList">
-                <dl id="items" class="dl-horizontal">
-                </dl>
+            <div class="span3 itemList">
+              <div class="well sidebar-nav">
+                    <dl id="items" class="dl-horizontal">
+                    </dl>
+              </div>
             </div>
 
-            <div class="span8">
-                <div id="map"></div>
-
-                <div id="info">
+            <div class="span9">
+                <div class="hero-unit map-wrapper">
+                    <div id="map"></div>
+                </div>
+                
+                <div class="hero-unit info-wrapper">
+                    <div id="info">
+                    </div>
                 </div>
             </div>
         </div>
