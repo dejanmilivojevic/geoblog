@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Track my location via web",
     "long_description": "Geo blog.",
-    "attachments": ["index.html", "post.html", "static/img"],
+    "attachments": ["index.html", "post.html", "static/img", "static/js"],
     "modules": ["lib", "packages/bootstrap/bootstrap/js"],
     "load": "lib/app",
     "less": {
