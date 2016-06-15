@@ -3,8 +3,13 @@ Geoblog
 
 ### Install instructions:
 
-First install node, couchdb and kanso. Use instrictions from [http://kan.so/install](http://kan.so/install)
+First install node, couchdb.
 
+Install kanso. Kanso requires node 0.10
+
+```shell
+npm install -g kanso
+```
 
 ```shell
 kanso push http://localhost:5984/location
